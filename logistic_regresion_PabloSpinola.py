@@ -625,6 +625,7 @@ if __name__ == "__main__":
     normalize_eval = escalar_prom(eval_data_indep)
     predicted_Y = regresion1.predict(normalize_eval)
 
+    # Se evalua el modelo
     evaluacion1 = Reg_Evaluation(real_Y, predicted_Y)
     evaluacion1.matrix_confusion()
     evaluacion1.curve_precision_recall()
